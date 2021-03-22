@@ -15,12 +15,17 @@ npm install --save sift-react
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'sift-react'
-import 'sift-react/dist/index.css'
+import Sift from 'sift-react'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <Sift 
+        userId="288" 
+        sessionId="9309874396287483" 
+        beaconKey="er29xd9rvz4g5abg"
+      />
+    )
   }
 }
 ```

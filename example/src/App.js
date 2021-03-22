@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Sift from 'sift-react'
 
-import { ExampleComponent } from 'sift-react'
-import 'sift-react/dist/index.css'
+class App extends Component {
+  render() {
+    return (
+      <Sift 
+        userId="288" 
+        sessionId="9309874396287483" 
+        beaconKey="er29xd9rvz4g5abg"
+      />
+    )
 
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  }
 }
 
 export default App
